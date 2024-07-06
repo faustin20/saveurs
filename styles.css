@@ -1,0 +1,219 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:  rgb(183, 238, 229);;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+#navbarNav ul li a:hover {
+    background-color: rgb(118, 161, 153);
+    border-radius: 5px;
+}
+
+/* Styles pour la version mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(175, 93, 93);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+
+.div{
+    background-image: url(img/interieur\ restau.jpg); background-repeat: no-repeat; height: 100vh;
+    background-size: cover;
+}
+/* Ajoutez un padding-top au contenu pour compenser la barre fixe */
+.content {
+    padding-top: 60px; /* Ajustez cette valeur si nécessaire */
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px; /* Ajustez pour l'espacement en version mobile */
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+/*contact*/
+/* styles.css */
+
+.float{
+    float: left;
+ 
+    width: 100vh;
+}
+body {
+    background-color: #f8f9fa; /* Couleur de fond légèrement grise */
+}
+
+.container {
+    max-width: 600px; /* Limite la largeur du formulaire */
+    background-color: white; /* Fond blanc pour le formulaire */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Couleur du texte */
+}
+.btn{
+    text-align: center;
+    width: 100%;
+}
+
+
+/*footer*/
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    
+    bottom: 0;
+}
+footer .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer .social-icons li {
+    display: inline;
+}
+footer .social-icons li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+footer .social-icons li a:hover {
+    color: #1a1d20; /* Changer la couleur au survol */
+}
+footer .social-icons li img {
+    width: 30px;
+    height: 30px;
+}
+footer p {
+    margin: 10px 0 0;
+}
+
+
+.navbar-custom {
+    background-color: rgb(183, 238, 229); /* Couleur de fond personnalisée */
+  }
+  .navbar-custom .nav-link {
+    color: #000; /* Couleur noire pour les liens */
+  }
+  .navbar-custom .nav-link:hover {
+    color: #555; /* Couleur grise au survol */
+  }
+  .navbar-custom .navbar-brand {
+    color: #000; /* Couleur noire pour la marque */
+  }
+
+
+
+/*carte*/
+.map-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  
+    
+  }
+  .map-image {
+    width: 100%;
+    height: 100vh;
+   
+  }
+  .map-overlay {    
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+   
+    border-radius: 5px;
+  }
+
+
+
+  /*animer les image*/
+  div img{
+
+  
+  border-radius: 13px;  
+  box-shadow: 4px 7px 0px #2210c442; 
+  cursor: pointer;
+  margin: 5px; 
+  transition: 400ms;
+  
+  }
+  
+  div img:hover{
+ 
+  transform: scale(1.03);
+  }
+  

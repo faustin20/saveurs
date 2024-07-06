@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saveurs Authentiques</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">  
+</head>
+  <body style="background-image: url(img/restaurant.jpg);background-size: cover;">
+    
+       <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Saveurs Authentiques</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerie.html">Galerie des photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+         </nav>
+
+      <style>
+       
+        /* Style lorsque le champ est activé (clic) ou focus */
+        input[type="text"]:focus, input[type="text"]:active,
+        input[type="email"]:focus, input[type="email"]:active,
+        
+        textarea[type="commentaire"]:focus, input[type="commentaire"]:active,
+        textarea:focus, textarea:active {
+            background-color: lightblue; /* Couleur de fond bleue */
+            outline: none; /* Supprimer le contour par défaut */
+        }
+        </style>
+       
+       <div class="container mt-5" style="background-color: rgb(183, 238, 229);padding: 5vh;">
+        <h2>Contactez-Nous</h2>
+        <hr>
+        <form>
+            
+             <div class="mb-3">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom" required>
+              
+            </div>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom"required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse Mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse mail"required>
+            </div>
+            <div class="mb-3">
+                <label for="commentaire" class="form-label">Commentaire</label>
+                
+                <textarea type="commentaire"class="form-control" id="commentaire" rows="4" placeholder="Tapez votre commentaire"required></textarea>
+            </div>
+        
+            <button type="submit" class="btn btn-primary" style="text-align: center;" >Envoyer</button>
+        </form>
+      </div>
+
+
+      <div class="container mt-5">
+        <h1 style="text-align: center;">Notre Emplacement</h1>
+        <div class="map-container">
+          <img src="img/carte.jpg" alt="Carte de Paris" class="map-image" style="height: 90vh; border-radius: 10px;">
+          <div class="map-overlay">
+            <h4>Notre espace Aux Cayes</h4>
+            <p>Adresse : Rue Toussaint Louverture ,imp Brenda #2</p>
+            <p>Téléphone : +509 4590-5676</p>
+          </div>
+        </div>
+      </div>
+      
+    <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+<footer  >
+  <ul class="social-icons" style="height: 600%;">
+      <li>
+          <a href="https://www.instagram.com/_vf_production?igsh=MXU3djB0NzBud21pNQ==" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/512px-Instagram_icon.png" alt="Instagram">
+          </a>
+      </li>
+      <li>
+          <a href="https://www.facebook.com/mardoche.faustin.3" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/512px-Facebook_icon.svg.png" alt="Facebook">
+          </a>
+      </li>
+      <li>
+          <a href="https://wa.me/message/V2P4WZBMZRFKF1" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp">
+          </a>
+      </li>
+  </ul>
+  <p>&copy; 2024 Saveurs Authentiques. Tous droits réservés.</p>
+</footer>
+
+</html>
